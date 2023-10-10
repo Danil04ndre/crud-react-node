@@ -1,0 +1,40 @@
+.modal-containner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, .77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .1s ease;
+}
+
+.modal-containner * {
+  background-color: white;
+  position: relative;
+}
+.modal-containner button {
+  position: absolute;
+  top: -17px;
+  right: -15px;
+  z-index: 100;
+  background-color: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+.modal-containner button img {
+  background: none !important;
+}
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}

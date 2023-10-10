@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap");
+table {
+  border-collapse: collapse;
+  margin: 40px auto;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+td,
+th {
+  font-size: 1.1rem;
+  text-align: center;
+  border: 1px solid rgb(224, 223, 223);
+  padding: 13px 5px;
+}
+
+thead tr {
+  background-color: transparent !important;
+  font-family: "Raleway", sans-serif;
+}
+tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+table button {
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: transform 0.1s ease;
+}
+.edit {
+  background-color: rgb(19, 75, 226);
+  border-radius: 5px;
+  color: white;
+  
+}
+.delete {
+  background-color:  rgb(216, 16, 36);  
+  border-radius: 5px;
+  color: white;
+
+}
+table i {
+  font-size: 1.4rem;
+  padding: 7px 8px 8px 8px;
+}
+table button:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 940px) {
+ 
+  table td,th{
+    padding: 11px 5px;
+    font-size: 1rem;
+  }
+  table i {
+    font-size: 1.3rem;
+    padding: 6px 7px 7px 7px;
+  }
+}
+@media screen and (max-width: 680px) {
+ 
+  table td,th{
+    padding: 11px 5px;
+    font-size: .8rem;
+  }
+  table i {
+    font-size: .9rem;
+    padding: 4px 5px 5px 5px;
+  }
+  table button{
+    margin: 0 2px;
+  }
+}
+@media screen and (max-width: 384px) {
+ 
+  table td,th{
+    padding: 8px 4px;
+    font-size: .7rem;
+  }
+  table i {
+    font-size: .9rem;
+    padding: 3px 4px 4px 4px;
+  }
+  table button{
+    margin: 0 1px;
+  }
+}

@@ -1,0 +1,6 @@
+# Directorios generados por Node.js
+node_modules/
+
+# Archivos de registro y errores
+logs/
+*.log
